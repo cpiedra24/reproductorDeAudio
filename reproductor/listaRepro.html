@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Deón</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type = "text/javascript" src = "bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+		<link rel="stylesheet" type ="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+		<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+		<link rel="stylesheet" href="style.css">
+		<script type = "text/javascript" src = "bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type = "text/javascript" src = "js/l.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Deón</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a id = "perfilCargado" href="perfil.html"></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-plane"></span> En casa</a></li>
+					<li><a href="listaRepro.html"><span class="glyphicon glyphicon-headphones"></span> Lista De Reproducción</a></li>
+					<li><a class = "btn" onclick="logOut()"><span class="glyphicon glyphicon-log-out" ></span> Log Out</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class = "container">
+			<div class= "row">
+				<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<section id = "reproductor">
+					<video id = "media" width="720" height="400">
+						<source src  ="video.mp4" type = "video/mp4">
+					</video>
+						<nav>
+							<div id = "botones">
+								<button type = "button" id = "reproducir">Play</button>
+							</div>
+							<div id = "barra"></div>
+							<div id = "progreso"></div>
+							<div style="clear: both"></div>
+						</nav>
+
+					</section>
+
+
+				</div>
+				
+			</div>
+				
+		</div>
+		<!--	<footer class="container-fluid bg-4 text-center">
+				<h1>Informacion de la empresa</h1>
+				<p>...</p>
+		</footer>-->
+	</body>
+</html>
